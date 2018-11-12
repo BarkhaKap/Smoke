@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.hotelogix.smoke.FrontdeskTest.Ireporter"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.hotelogix.smoke.FrontdeskTest.FrontdeskTest">
+        <methods>
+          <include name="closeApp"/>
+          <include name="fn_verifyExpressCheckoutInSingleReserv"/>
+          <include name="fn_verifyGuestCheckinBtnForSingleGuestInGrpReserv"/>
+          <include name="fn_verifyCheckinBtnInSingleReserv"/>
+          <include name="fn_verifySingleLnkAndGuestCheckinLnk"/>
+          <include name="fn_CreateGroupReservOnWeb"/>
+          <include name="fn_verifyEnableEditingLateCheckoutInSingleReserv"/>
+          <include name="LaunchApp"/>
+          <include name="fn_verifyExportOfDiscountReport"/>
+          <include name="fn_verifyGuestCheckoutInSingleReserv"/>
+          <include name="fn_verifyChkoutForSingleGuestInGrpReserv"/>
+          <include name="fn_verifyCashierReport"/>
+          <include name="fn_verifyGrpChkoutBtnOnEnableEditing"/>
+          <include name="fn_verifyCheckoutSelectedInGrpReserv"/>
+          <include name="fn_verifyEnableEditingCheckoutInSingleReserv"/>
+          <include name="fn_verifyGroupCheckinBtnInGrpReserv"/>
+          <include name="fn_verifyEarlyCheckinBtnForSingleGuestInGrpReserv"/>
+          <include name="fn_verifyCheckinBtnForSingleGuestInGrpReserv"/>
+          <include name="TC_194_195_196_197_198_199_200_201"/>
+          <include name="fn_verifySingleLinkAndEarlyCheckinBtn"/>
+          <include name="fn_verifyLateChkoutForSingleGuestInGrpReserv"/>
+          <include name="fn_verifyGroupChkoutInGrpReserv"/>
+          <include name="fn_verifyRgtClickGroupCheckoutLink"/>
+          <include name="fn_verifyExpressChkoutInGrpReserv"/>
+          <include name="fn_verifyGuestEarlyCheckinBtnForSingleGuestInGrpReserv"/>
+          <include name="fn_verifyRtClkCheckoutInSingleReserv"/>
+          <include name="fn_verifyAutoNAPostingsInAccounts"/>
+          <include name="fn_verifyCheckinSelectedInGrpReserv"/>
+          <include name="fn_verifyEarlyCheckinBtnInReserv"/>
+        </methods>
+      </class> <!-- com.hotelogix.smoke.FrontdeskTest.FrontdeskTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

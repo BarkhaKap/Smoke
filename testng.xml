@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="3" parallel="false" >
+   <!--<parameter name="browser" value="FireFox"/>-->
+ 
+  <!--<test name="FireFoxTest">
+       
+    <classes>
+    
+  <class name="com.hotelogix.smoke.FrontdeskTest.FrontdeskTest"/>
+         
+   </classes>
+   </test>-->  
+   
+   
+   
+   
+   
+   
+    <listeners>
+         <listener class-name="com.hotelogix.smoke.FrontdeskTest.Ireporter" />
+    </listeners> 
+ 
+ <test name="Test">
+    <classes>
+      <class name="com.hotelogix.smoke.FrontdeskTest.FrontdeskTest"/>  
+       </classes>
+  </test>  <!--Test -->
+         
+         
+         
+         
+         
+         
+  <!--   <test name="FirefoxTest">
+   <parameter name="browser" value="Firefox"/>
+   <classes>
+       <class name="com.hotelogix.smoke.AdminTest.AdminTest"/> 
+      <class name="com.hotelogix.smoke.FrontdeskTest.FrontdeskTest"/>   
+         
+    </classes>    
+    </test>    -->
+         
+</suite> <!-- Suite -->

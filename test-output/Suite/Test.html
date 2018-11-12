@@ -1,0 +1,1719 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>26/15/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 29 13:40:52 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>9259 seconds (9259474 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.TC_180_181_182_183_184_185_186_187_188()'><b>TC_180_181_182_183_184_185_186_187_188</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Navigate to Web Console by clicking 'Web Reservation' link on frontdesk, and create a web reservation.Verify rates and taxes posted for booking on frontdesk.</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.hotelogix.smoke.genericandbase.GenericMethods.fn_hold(GenericMethods.java:873)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:464)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_clkAdminLnk(FrontdeskLandingPage.java:688)
+	at com.hotelogix.smoke.frontdesk.WebReservation.WebConfirmReservationPage.ConfirmBooking(WebConfirmReservationPage.java:170)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.TC_180_181_182_183_184_185_186_187_188(FrontdeskTest.java:166)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace307605969", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace307605969'><pre>java.lang.NullPointerException
+	at com.hotelogix.smoke.genericandbase.GenericMethods.fn_hold(GenericMethods.java:873)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:464)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_clkAdminLnk(FrontdeskLandingPage.java:688)
+	at com.hotelogix.smoke.frontdesk.WebReservation.WebConfirmReservationPage.ConfirmBooking(WebConfirmReservationPage.java:170)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.TC_180_181_182_183_184_185_186_187_188(FrontdeskTest.java:166)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>127</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.TC_189_190()'><b>TC_189_190</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Attach a master package to web and verify published price on web console.</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (600.75, 212). Other element would receive the click: &lt;a href=&quot;https://20805.staygrid.com/admine/channelopt/listview/&quot;&gt;&lt;/a&gt;
+Command duration or timeout: 153 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b5caaf93-6bc3-45dc-a6e9-4ab57a9a6c69
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:465)
+	at com.hotelogix.smoke.admin.PriceManager.ListOfPackagesWeb.attachPackage(ListOfPackagesWeb.java:144)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.TC_189_190(FrontdeskTest.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1128266449", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1128266449'><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (600.75, 212). Other element would receive the click: &lt;a href=&quot;https://20805.staygrid.com/admine/channelopt/listview/&quot;&gt;&lt;/a&gt;
+Command duration or timeout: 153 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b5caaf93-6bc3-45dc-a6e9-4ab57a9a6c69
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:465)
+	at com.hotelogix.smoke.admin.PriceManager.ListOfPackagesWeb.attachPackage(ListOfPackagesWeb.java:144)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.TC_189_190(FrontdeskTest.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>142</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.TC_191()'><b>TC_191</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Select Last Min Rate checkbox corresponding to any of the room type in room price list page and verify published rate on web console.</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@value=&apos;Cancel&apos;]&quot;}
+Command duration or timeout: 70.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2f37f8c2-6364-495a-aa92-069a3aba6378
+*** Element info: {Using=xpath, value=//input[@value=&apos;Cancel&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.fn_hold(GenericMethods.java:873)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:464)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_ClickCancelButton(FrontdeskLandingPage.java:477)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.TC_191(FrontdeskTest.java:275)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@value=&apos;Cancel&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/barkha/AppData/Local/Temp/anonymous6194645228985417797webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/barkha/AppData/Local/Temp/anonymous6194645228985417797webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1691858720", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1691858720'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@value=&apos;Cancel&apos;]&quot;}
+Command duration or timeout: 70.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2f37f8c2-6364-495a-aa92-069a3aba6378
+*** Element info: {Using=xpath, value=//input[@value=&apos;Cancel&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.fn_hold(GenericMethods.java:873)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:464)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_ClickCancelButton(FrontdeskLandingPage.java:477)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.TC_191(FrontdeskTest.java:275)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@value=&apos;Cancel&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/barkha/AppData/Local/Temp/anonymous6194645228985417797webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/barkha/AppData/Local/Temp/anonymous6194645228985417797webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div></td>
+<td>138</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.TC_194_195_196_197_198_199_200_201()'><b>TC_194_195_196_197_198_199_200_201</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create a web reservation.Verify rates and taxes in booking confirmation mail.Navigate to guest console by clicking on link provided in Account Detail mail and create a web resevration by clicking 'Book Now' link.</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.hotelogix.smoke.genericandbase.GenericMethods.fn_hold(GenericMethods.java:873)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:464)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_clkAdminLnk(FrontdeskLandingPage.java:688)
+	at com.hotelogix.smoke.frontdesk.WebReservation.WebConfirmReservationPage.ConfirmBooking(WebConfirmReservationPage.java:170)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.TC_194_195_196_197_198_199_200_201(FrontdeskTest.java:388)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace180078856", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace180078856'><pre>java.lang.NullPointerException
+	at com.hotelogix.smoke.genericandbase.GenericMethods.fn_hold(GenericMethods.java:873)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:464)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_clkAdminLnk(FrontdeskLandingPage.java:688)
+	at com.hotelogix.smoke.frontdesk.WebReservation.WebConfirmReservationPage.ConfirmBooking(WebConfirmReservationPage.java:170)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.TC_194_195_196_197_198_199_200_201(FrontdeskTest.java:388)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>167</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_CreateGroupReservOnWeb()'><b>fn_CreateGroupReservOnWeb</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create a group reservation on web console.Verify posted rates and taxes on frontdesk.</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.hotelogix.smoke.genericandbase.GenericMethods.fn_hold(GenericMethods.java:873)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:464)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_clkAdminLnk(FrontdeskLandingPage.java:688)
+	at com.hotelogix.smoke.frontdesk.WebReservation.WebConfirmReservationPage.ConfirmBooking(WebConfirmReservationPage.java:170)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_CreateGroupReservOnWeb(FrontdeskTest.java:908)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1475982439", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1475982439'><pre>java.lang.NullPointerException
+	at com.hotelogix.smoke.genericandbase.GenericMethods.fn_hold(GenericMethods.java:873)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:464)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_clkAdminLnk(FrontdeskLandingPage.java:688)
+	at com.hotelogix.smoke.frontdesk.WebReservation.WebConfirmReservationPage.ConfirmBooking(WebConfirmReservationPage.java:170)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_CreateGroupReservOnWeb(FrontdeskTest.java:908)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>171</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyAutoNAPostingsInAccounts()'><b>fn_verifyAutoNAPostingsInAccounts</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Click on 'Perform Auto Night Audit' on cancel pop-up.Once night audit has been performed, navigate to 'Accounts' page and verify folio postings.</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:286)
+	at org.testng.Assert.assertEquals(Assert.java:296)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyAutoNAPostingsInAccounts(FrontdeskTest.java:487)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace613281005", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace613281005'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:286)
+	at org.testng.Assert.assertEquals(Assert.java:296)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyAutoNAPostingsInAccounts(FrontdeskTest.java:487)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>102</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyEnableEditingCheckinBtnInSingleReserv()'><b>fn_verifyEnableEditingCheckinBtnInSingleReserv</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create a single reservation and verify 'Checkin' button on Enable Editing page.</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 20.14 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4811c4e3-9bd5-4a16-84c1-e2e24edcad27
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:465)
+	at com.hotelogix.smoke.frontdesk.FrontdeskTrialPage.FrontdeskContinueTrialPage.fn_ClickCountinueWithTrail_BT(FrontdeskContinueTrialPage.java:52)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyEnableEditingCheckinBtnInSingleReserv(FrontdeskTest.java:987)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.Utils.installClickListener/e&lt;(file:///C:/Users/barkha/AppData/Local/Temp/anonymous8336740867324565510webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9372)
+	at &lt;anonymous class&gt;.WebLoadingListener/e(file:///C:/Users/barkha/AppData/Local/Temp/anonymous8336740867324565510webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:5142)
+	at &lt;anonymous class&gt;.WebLoadingListener/&lt;(file:///C:/Users/barkha/AppData/Local/Temp/anonymous8336740867324565510webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:5150)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/barkha/AppData/Local/Temp/anonymous8336740867324565510webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1195909598", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1195909598'><pre>org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 20.14 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4811c4e3-9bd5-4a16-84c1-e2e24edcad27
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:465)
+	at com.hotelogix.smoke.frontdesk.FrontdeskTrialPage.FrontdeskContinueTrialPage.fn_ClickCountinueWithTrail_BT(FrontdeskContinueTrialPage.java:52)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyEnableEditingCheckinBtnInSingleReserv(FrontdeskTest.java:987)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.Utils.installClickListener/e&lt;(file:///C:/Users/barkha/AppData/Local/Temp/anonymous8336740867324565510webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9372)
+	at &lt;anonymous class&gt;.WebLoadingListener/e(file:///C:/Users/barkha/AppData/Local/Temp/anonymous8336740867324565510webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:5142)
+	at &lt;anonymous class&gt;.WebLoadingListener/&lt;(file:///C:/Users/barkha/AppData/Local/Temp/anonymous8336740867324565510webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:5150)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/barkha/AppData/Local/Temp/anonymous8336740867324565510webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+</pre></div></td>
+<td>156</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyEnableEditingCheckoutInSingleReserv()'><b>fn_verifyEnableEditingCheckoutInSingleReserv</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N1R reservation,navigate to Enable Editing page and verify 'Checkout' button.</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 70.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3fb4c326-7c06-43fa-8efe-9dfaba4e073a
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:150)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_rtClk(FrontdeskLandingPage.java:3122)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyEnableEditingCheckoutInSingleReserv(FrontdeskTest.java:1863)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.cache.getElementAt(resource://fxdriver/modules/web-element-cache.js:9454)
+	at &lt;anonymous class&gt;.Utils.getElementAt(file:///C:/Users/barkha/AppData/Local/Temp/anonymous940950155561748941webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9039)
+	at &lt;anonymous class&gt;.WebElement.getElementAttribute(file:///C:/Users/barkha/AppData/Local/Temp/anonymous940950155561748941webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12146)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/barkha/AppData/Local/Temp/anonymous940950155561748941webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/barkha/AppData/Local/Temp/anonymous940950155561748941webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+</pre></div><a href='#' onClick='toggleBox("stack-trace200598670", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace200598670'><pre>org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 70.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3fb4c326-7c06-43fa-8efe-9dfaba4e073a
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:150)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_rtClk(FrontdeskLandingPage.java:3122)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyEnableEditingCheckoutInSingleReserv(FrontdeskTest.java:1863)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.cache.getElementAt(resource://fxdriver/modules/web-element-cache.js:9454)
+	at &lt;anonymous class&gt;.Utils.getElementAt(file:///C:/Users/barkha/AppData/Local/Temp/anonymous940950155561748941webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9039)
+	at &lt;anonymous class&gt;.WebElement.getElementAttribute(file:///C:/Users/barkha/AppData/Local/Temp/anonymous940950155561748941webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12146)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/barkha/AppData/Local/Temp/anonymous940950155561748941webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/barkha/AppData/Local/Temp/anonymous940950155561748941webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+</pre></div></td>
+<td>277</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyEnableEditingLateCheckoutInSingleReserv()'><b>fn_verifyEnableEditingLateCheckoutInSingleReserv</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N1R reservation,navigate to Enable Editing page and verify 'Late Checkout' button.</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@class=&apos;payment_total&apos;]//tr[8]//td[2]&quot;}
+Command duration or timeout: 70.17 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e6b9b757-bf92-4f1d-9622-51246e5dc97a
+*** Element info: {Using=xpath, value=//table[@class=&apos;payment_total&apos;]//tr[8]//td[2]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.getText(Unknown Source)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.getText(GenericMethods.java:219)
+	at com.hotelogix.smoke.frontdesk.Payment.AccountStatementLandingPage.fn_clkSettleFolioAccept(AccountStatementLandingPage.java:693)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyEnableEditingLateCheckoutInSingleReserv(FrontdeskTest.java:1923)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@class=&apos;payment_total&apos;]//tr[8]//td[2]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/barkha/AppData/Local/Temp/anonymous6860703588741471969webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/barkha/AppData/Local/Temp/anonymous6860703588741471969webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1039948229", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1039948229'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@class=&apos;payment_total&apos;]//tr[8]//td[2]&quot;}
+Command duration or timeout: 70.17 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e6b9b757-bf92-4f1d-9622-51246e5dc97a
+*** Element info: {Using=xpath, value=//table[@class=&apos;payment_total&apos;]//tr[8]//td[2]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.getText(Unknown Source)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.getText(GenericMethods.java:219)
+	at com.hotelogix.smoke.frontdesk.Payment.AccountStatementLandingPage.fn_clkSettleFolioAccept(AccountStatementLandingPage.java:693)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyEnableEditingLateCheckoutInSingleReserv(FrontdeskTest.java:1923)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@class=&apos;payment_total&apos;]//tr[8]//td[2]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/barkha/AppData/Local/Temp/anonymous6860703588741471969webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/barkha/AppData/Local/Temp/anonymous6860703588741471969webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div></td>
+<td>291</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyHouseCountReportForSpecificDateRange()'><b>fn_verifyHouseCountReportForSpecificDateRange</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Verify House Count Report for selected room type and selected date range</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:286)
+	at org.testng.Assert.assertEquals(Assert.java:296)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyHouseCountReportForSpecificDateRange(FrontdeskTest.java:528)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2091586824", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2091586824'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:286)
+	at org.testng.Assert.assertEquals(Assert.java:296)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyHouseCountReportForSpecificDateRange(FrontdeskTest.java:528)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>102</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyMonthlySummaryReportForSpecificMonth()'><b>fn_verifyMonthlySummaryReportForSpecificMonth</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Verify monthly summary report for selected month and year.</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//strong[text()=&apos;Financial Report &apos;]&quot;}
+Command duration or timeout: 70.25 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bc297442-5ed4-4bac-831c-fcf53fe6110c
+*** Element info: {Using=xpath, value=//strong[text()=&apos;Financial Report &apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.fn_hold(GenericMethods.java:873)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:464)
+	at com.hotelogix.smoke.frontdesk.Report.ReportLandingPage.fn_ClickOFinancialReport(ReportLandingPage.java:73)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyMonthlySummaryReportForSpecificMonth(FrontdeskTest.java:577)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//strong[text()=&apos;Financial Report &apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/barkha/AppData/Local/Temp/anonymous1297856837412161185webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/barkha/AppData/Local/Temp/anonymous1297856837412161185webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div><a href='#' onClick='toggleBox("stack-trace34757331", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace34757331'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//strong[text()=&apos;Financial Report &apos;]&quot;}
+Command duration or timeout: 70.25 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bc297442-5ed4-4bac-831c-fcf53fe6110c
+*** Element info: {Using=xpath, value=//strong[text()=&apos;Financial Report &apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.fn_hold(GenericMethods.java:873)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:464)
+	at com.hotelogix.smoke.frontdesk.Report.ReportLandingPage.fn_ClickOFinancialReport(ReportLandingPage.java:73)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyMonthlySummaryReportForSpecificMonth(FrontdeskTest.java:577)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//strong[text()=&apos;Financial Report &apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/barkha/AppData/Local/Temp/anonymous1297856837412161185webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/barkha/AppData/Local/Temp/anonymous1297856837412161185webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div></td>
+<td>175</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyPrintAndExportBtnInCashierReport()'><b>fn_verifyPrintAndExportBtnInCashierReport</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Verify Cashier report for selected counter,POS Point and date range.Also verify 'Print' and 'Export' button functionality.</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@value=&apos;Cancel&apos;]&quot;}
+Command duration or timeout: 70.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 40d81fb0-a530-4fc3-adb3-90ff656e07b9
+*** Element info: {Using=xpath, value=//input[@value=&apos;Cancel&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.fn_hold(GenericMethods.java:873)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:464)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_ClickCancelButton(FrontdeskLandingPage.java:477)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyPrintAndExportBtnInCashierReport(FrontdeskTest.java:613)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@value=&apos;Cancel&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/barkha/AppData/Local/Temp/anonymous5589315537292541402webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/barkha/AppData/Local/Temp/anonymous5589315537292541402webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div><a href='#' onClick='toggleBox("stack-trace481792876", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace481792876'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@value=&apos;Cancel&apos;]&quot;}
+Command duration or timeout: 70.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 40d81fb0-a530-4fc3-adb3-90ff656e07b9
+*** Element info: {Using=xpath, value=//input[@value=&apos;Cancel&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.fn_hold(GenericMethods.java:873)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:464)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_ClickCancelButton(FrontdeskLandingPage.java:477)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyPrintAndExportBtnInCashierReport(FrontdeskTest.java:613)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@value=&apos;Cancel&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/barkha/AppData/Local/Temp/anonymous5589315537292541402webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/barkha/AppData/Local/Temp/anonymous5589315537292541402webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div></td>
+<td>256</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyPrintAndExportBtnInDailySalesReport()'><b>fn_verifyPrintAndExportBtnInDailySalesReport</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Verify Daily sales report for specific counter,POS Point and date range.Also verify 'Print' and 'Export' button functionality.</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (628, 578.7999877929688). Other element would receive the click: &lt;div style=&quot;z-index: 10002; height: 1398px; width: 1263px; display: block;&quot; id=&quot;PanelModalWait_mask&quot; class=&quot;mask&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 94 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ec035503-94bf-467d-ab04-c52b6c1aa3ee
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:465)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_ClickCancelButton(FrontdeskLandingPage.java:477)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyPrintAndExportBtnInDailySalesReport(FrontdeskTest.java:797)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1296153103", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1296153103'><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (628, 578.7999877929688). Other element would receive the click: &lt;div style=&quot;z-index: 10002; height: 1398px; width: 1263px; display: block;&quot; id=&quot;PanelModalWait_mask&quot; class=&quot;mask&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 94 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ec035503-94bf-467d-ab04-c52b6c1aa3ee
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:465)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_ClickCancelButton(FrontdeskLandingPage.java:477)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyPrintAndExportBtnInDailySalesReport(FrontdeskTest.java:797)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>84</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyRgtClickGroupCheckoutLink()'><b>fn_verifyRgtClickGroupCheckoutLink</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create group reservation,right click on reservation & click 'Group Check-out'</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 70.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1c01317c-1d13-42fe-8907-3e151be577f6
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:150)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_rtClk(FrontdeskLandingPage.java:3122)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyRgtClickGroupCheckoutLink(FrontdeskTest.java:2100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.cache.getElementAt(resource://fxdriver/modules/web-element-cache.js:9454)
+	at &lt;anonymous class&gt;.Utils.getElementAt(file:///C:/Users/barkha/AppData/Local/Temp/anonymous784150949680395563webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9039)
+	at &lt;anonymous class&gt;.WebElement.getElementAttribute(file:///C:/Users/barkha/AppData/Local/Temp/anonymous784150949680395563webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12146)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/barkha/AppData/Local/Temp/anonymous784150949680395563webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/barkha/AppData/Local/Temp/anonymous784150949680395563webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1796226487", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1796226487'><pre>org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 70.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1c01317c-1d13-42fe-8907-3e151be577f6
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:150)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_rtClk(FrontdeskLandingPage.java:3122)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyRgtClickGroupCheckoutLink(FrontdeskTest.java:2100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.cache.getElementAt(resource://fxdriver/modules/web-element-cache.js:9454)
+	at &lt;anonymous class&gt;.Utils.getElementAt(file:///C:/Users/barkha/AppData/Local/Temp/anonymous784150949680395563webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9039)
+	at &lt;anonymous class&gt;.WebElement.getElementAttribute(file:///C:/Users/barkha/AppData/Local/Temp/anonymous784150949680395563webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12146)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/barkha/AppData/Local/Temp/anonymous784150949680395563webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/barkha/AppData/Local/Temp/anonymous784150949680395563webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+</pre></div></td>
+<td>302</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyRtClkCheckoutInSingleReserv()'><b>fn_verifyRtClkCheckoutInSingleReserv</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N1R reservation,right click on it and verify 'Checkout' link.</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 70.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 29a6c0b0-5ad1-427e-8bac-c302b54cea47
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:150)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_rtClk(FrontdeskLandingPage.java:3122)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyRtClkCheckoutInSingleReserv(FrontdeskTest.java:1802)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.cache.getElementAt(resource://fxdriver/modules/web-element-cache.js:9454)
+	at &lt;anonymous class&gt;.Utils.getElementAt(file:///C:/Users/barkha/AppData/Local/Temp/anonymous3356141706553274164webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9039)
+	at &lt;anonymous class&gt;.WebElement.getElementAttribute(file:///C:/Users/barkha/AppData/Local/Temp/anonymous3356141706553274164webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12146)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/barkha/AppData/Local/Temp/anonymous3356141706553274164webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/barkha/AppData/Local/Temp/anonymous3356141706553274164webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1124937761", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1124937761'><pre>org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 70.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 29a6c0b0-5ad1-427e-8bac-c302b54cea47
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:150)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_rtClk(FrontdeskLandingPage.java:3122)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyRtClkCheckoutInSingleReserv(FrontdeskTest.java:1802)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;HMS-Barkha-QA&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.cache.getElementAt(resource://fxdriver/modules/web-element-cache.js:9454)
+	at &lt;anonymous class&gt;.Utils.getElementAt(file:///C:/Users/barkha/AppData/Local/Temp/anonymous3356141706553274164webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9039)
+	at &lt;anonymous class&gt;.WebElement.getElementAttribute(file:///C:/Users/barkha/AppData/Local/Temp/anonymous3356141706553274164webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12146)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/barkha/AppData/Local/Temp/anonymous3356141706553274164webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/barkha/AppData/Local/Temp/anonymous3356141706553274164webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+</pre></div></td>
+<td>302</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyCheckinBtnForSingleGuestInGrpReserv()'><b>fn_verifyCheckinBtnForSingleGuestInGrpReserv</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N2R group reservation, and verify 'Checkin' button for individual guest/room.</td>
+<td></td>
+<td>241</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyCheckinSelectedInGrpReserv()'><b>fn_verifyCheckinSelectedInGrpReserv</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N2R reservation, and verify 'Checkin Selected' button</td>
+<td></td>
+<td>223</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyCheckoutSelectedInGrpReserv()'><b>fn_verifyCheckoutSelectedInGrpReserv</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N1R group reservation, and verify 'Checkout Selected' button on Enable Editing page.</td>
+<td></td>
+<td>288</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyChkoutForSingleGuestInGrpReserv()'><b>fn_verifyChkoutForSingleGuestInGrpReserv</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N1R group reservation, and verify 'Check-out' button for single guest.</td>
+<td></td>
+<td>302</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyEarlyCheckinBtnForSingleGuestInGrpReserv()'><b>fn_verifyEarlyCheckinBtnForSingleGuestInGrpReserv</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N2R group reservation, and verify 'Early Checkin'button for individual guest/room.</td>
+<td></td>
+<td>229</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyEarlyCheckinBtnInSingleReserv()'><b>fn_verifyEarlyCheckinBtnInSingleReserv</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N1R reservation,and verify 'Early Checkin' button on Enable Editing page.</td>
+<td></td>
+<td>198</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyEnableEditingGroupCheckinBtn()'><b>fn_verifyEnableEditingGroupCheckinBtn</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N2R reservation, and verify 'Group Checkin' button.</td>
+<td></td>
+<td>202</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyExpressCheckoutInSingleReserv()'><b>fn_verifyExpressCheckoutInSingleReserv</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N1R reservation,navigate to Payment page and verify 'Express Checkout' button.</td>
+<td></td>
+<td>261</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyExpressChkoutInGrpReserv()'><b>fn_verifyExpressChkoutInGrpReserv</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N1R group reservation, and verify 'Express Check-out' button on Payment page.</td>
+<td></td>
+<td>270</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyGroupChkoutInGrpReserv()'><b>fn_verifyGroupChkoutInGrpReserv</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N1R group reservation, and verify 'Group Check-out' button on Payment page.</td>
+<td></td>
+<td>290</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyGrpChkoutBtnOnEnableEditing()'><b>fn_verifyGrpChkoutBtnOnEnableEditing</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N1R group reservation, and verify 'Group Checkout' button on Enable Editing page.</td>
+<td></td>
+<td>279</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyGrpLinkAndGroupCheckinBtn()'><b>fn_verifyGrpLinkAndGroupCheckinBtn</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N1R group reservation by clicking 'Group' link, and verify 'Group Checkin' button.</td>
+<td></td>
+<td>196</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyGuestCheckInLnkForSingleReserv()'><b>fn_verifyGuestCheckInLnkForSingleReserv</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N1R reservation,and verify 'Guest Checkin' link on Enable Editing page.</td>
+<td></td>
+<td>199</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyGuestCheckinLnkForSingleGuestInGrpReserv()'><b>fn_verifyGuestCheckinLnkForSingleGuestInGrpReserv</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N2R group reservation, and verify 'Guest Checkin'button for individual guest/room.</td>
+<td></td>
+<td>236</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyGuestCheckoutInSingleReserv()'><b>fn_verifyGuestCheckoutInSingleReserv</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N1R reservation with more than 1 guest,navigate to Payment page and verify 'Guest Checkout' button.</td>
+<td></td>
+<td>285</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyGuestEarlyCheckinLnkForSingleGuestInGrpReserv()'><b>fn_verifyGuestEarlyCheckinLnkForSingleGuestInGrpReserv</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N2R group reservation, and verify 'Guest Early Check-in'button for individual guest/room.</td>
+<td></td>
+<td>217</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyGuestEarlyCheckinLnkInSingleReserv()'><b>fn_verifyGuestEarlyCheckinLnkInSingleReserv</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N1R reservation, and verify 'Guest Early Checkin' link</td>
+<td></td>
+<td>208</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyLateChkoutForSingleGuestInGrpReserv()'><b>fn_verifyLateChkoutForSingleGuestInGrpReserv</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N1R group reservation, and verify 'Late Check-out' button for single guest.</td>
+<td></td>
+<td>364</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyPriceAndDiscAmtOnMoreDetailPage()'><b>fn_verifyPriceAndDiscAmtOnMoreDetailPage</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Apply special discount while creating web reservation and verify discounted amount on Web More Detail page.</td>
+<td></td>
+<td>166</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyPrintAndExportBtnInNoShowReport()'><b>fn_verifyPrintAndExportBtnInNoShowReport</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Verify No show report for specific date range.Also verify 'Print' and 'Export' button functionality.<br/>
+<a href="#Output-2048869869" onClick='toggleBox("Output-2048869869", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2048869869" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2048869869">
+Handle Print Pop-Up<br/>
+Handle Export Downloading Pop-Up<br/>
+</div>
+</td>
+<td></td>
+<td>161</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyPrintAndExportBtnOfDiscountReport()'><b>fn_verifyPrintAndExportBtnOfDiscountReport</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Verify discounted report for specific counter,POS Point and date range.Also verify 'Print' and 'Export' button functionality.<br/>
+<a href="#Output-707992390" onClick='toggleBox("Output-707992390", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-707992390" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-707992390">
+Handle Print Pop-Up<br/>
+Handle Export Downloading Pop-Up<br/>
+</div>
+</td>
+<td></td>
+<td>148</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyPrintAndExportOfMonthlySummaryReport()'><b>fn_verifyPrintAndExportOfMonthlySummaryReport</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Verify 'Export' button functionality for monthly summary report<br/>
+<a href="#Output-1137935956" onClick='toggleBox("Output-1137935956", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1137935956" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1137935956">
+Handle Print Pop-Up<br/>
+Handle Export Downloading Pop-Up<br/>
+</div>
+</td>
+<td></td>
+<td>144</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifySingleLinkAndCheckinBtn()'><b>fn_verifySingleLinkAndCheckinBtn</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N1R reservation,click 'Single' link and then click 'Checkin' button</td>
+<td></td>
+<td>216</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifySingleLinkAndEarlyCheckinBtn()'><b>fn_verifySingleLinkAndEarlyCheckinBtn</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N1R reservation,click 'Single' link and then click 'EarlyCheckin' button</td>
+<td></td>
+<td>200</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifySingleLnkAndEarlyGuestCheckinLnk()'><b>fn_verifySingleLnkAndEarlyGuestCheckinLnk</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N1R reservation, click Single link and verify 'Early guest Checkin' link</td>
+<td></td>
+<td>200</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+<tr>
+<td title='com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifySingleLnkAndGuestCheckinLnk()'><b>fn_verifySingleLnkAndGuestCheckinLnk</b><br>Test class: com.hotelogix.smoke.FrontdeskTest.FrontdeskTest<br>Test method: Create 1N1R reservation, click Single link and verify 'Guest Checkin' link</td>
+<td></td>
+<td>190</td>
+<td>com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@3d99d22e</td></tr>
+</table><p>
+</body>
+</html>

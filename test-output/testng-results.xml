@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="5" total="7" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Failed suite [Failed suite [Suite]]" duration-ms="1339118" started-at="2018-10-29T11:42:31Z" finished-at="2018-10-29T12:04:50Z">
+    <groups>
+    </groups>
+    <test name="Test(failed)(failed)" duration-ms="1339118" started-at="2018-10-29T11:42:31Z" finished-at="2018-10-29T12:04:50Z">
+      <class name="com.hotelogix.smoke.FrontdeskTest.FrontdeskTest">
+        <test-method status="PASS" signature="LaunchApp()[pri:0, instance:com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@4973813a]" name="LaunchApp" is-config="true" duration-ms="12022" started-at="2018-10-29T17:12:31Z" finished-at="2018-10-29T17:12:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApp -->
+        <test-method status="FAIL" signature="TC_180_181_182_183_184_185_186_187_188()[pri:0, instance:com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@4973813a]" name="TC_180_181_182_183_184_185_186_187_188" duration-ms="120467" started-at="2018-10-29T17:12:43Z" description="Navigate to Web Console by clicking &#039;Web Reservation&#039; link on frontdesk, and create a web reservation.Verify rates and taxes posted for booking on frontdesk." finished-at="2018-10-29T17:14:44Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.hotelogix.smoke.genericandbase.GenericMethods.fn_hold(GenericMethods.java:873)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:464)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_clkAdminLnk(FrontdeskLandingPage.java:688)
+	at com.hotelogix.smoke.frontdesk.WebReservation.WebConfirmReservationPage.ConfirmBooking(WebConfirmReservationPage.java:170)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.TC_180_181_182_183_184_185_186_187_188(FrontdeskTest.java:166)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_180_181_182_183_184_185_186_187_188 -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@4973813a]" name="closeApp" is-config="true" duration-ms="758" started-at="2018-10-29T17:14:44Z" finished-at="2018-10-29T17:14:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method status="PASS" signature="LaunchApp()[pri:0, instance:com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@4973813a]" name="LaunchApp" is-config="true" duration-ms="10730" started-at="2018-10-29T17:14:44Z" finished-at="2018-10-29T17:14:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApp -->
+        <test-method status="FAIL" signature="TC_194_195_196_197_198_199_200_201()[pri:0, instance:com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@4973813a]" name="TC_194_195_196_197_198_199_200_201" duration-ms="155931" started-at="2018-10-29T17:14:55Z" description="Create a web reservation.Verify rates and taxes in booking confirmation mail.Navigate to guest console by clicking on link provided in Account Detail mail and create a web resevration by clicking &#039;Book Now&#039; link." finished-at="2018-10-29T17:17:31Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.hotelogix.smoke.genericandbase.GenericMethods.fn_hold(GenericMethods.java:873)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:464)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_clkAdminLnk(FrontdeskLandingPage.java:688)
+	at com.hotelogix.smoke.frontdesk.WebReservation.WebConfirmReservationPage.ConfirmBooking(WebConfirmReservationPage.java:170)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.TC_194_195_196_197_198_199_200_201(FrontdeskTest.java:388)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_194_195_196_197_198_199_200_201 -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@4973813a]" name="closeApp" is-config="true" duration-ms="945" started-at="2018-10-29T17:17:31Z" finished-at="2018-10-29T17:17:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method status="PASS" signature="LaunchApp()[pri:0, instance:com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@4973813a]" name="LaunchApp" is-config="true" duration-ms="11656" started-at="2018-10-29T17:17:32Z" finished-at="2018-10-29T17:17:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApp -->
+        <test-method status="FAIL" signature="fn_verifyAutoNAPostingsInAccounts()[pri:0, instance:com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@4973813a]" name="fn_verifyAutoNAPostingsInAccounts" duration-ms="105680" started-at="2018-10-29T17:17:44Z" description="Click on &#039;Perform Auto Night Audit&#039; on cancel pop-up.Once night audit has been performed, navigate to &#039;Accounts&#039; page and verify folio postings." finished-at="2018-10-29T17:19:29Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:286)
+	at org.testng.Assert.assertEquals(Assert.java:296)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyAutoNAPostingsInAccounts(FrontdeskTest.java:487)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fn_verifyAutoNAPostingsInAccounts -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@4973813a]" name="closeApp" is-config="true" duration-ms="644" started-at="2018-10-29T17:19:29Z" finished-at="2018-10-29T17:19:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method status="PASS" signature="LaunchApp()[pri:0, instance:com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@4973813a]" name="LaunchApp" is-config="true" duration-ms="11282" started-at="2018-10-29T17:19:30Z" finished-at="2018-10-29T17:19:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApp -->
+        <test-method status="FAIL" signature="fn_verifyHouseCountReportForSpecificDateRange()[pri:0, instance:com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@4973813a]" name="fn_verifyHouseCountReportForSpecificDateRange" duration-ms="96889" started-at="2018-10-29T17:19:41Z" description="Verify House Count Report for selected room type and selected date range" finished-at="2018-10-29T17:21:18Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:286)
+	at org.testng.Assert.assertEquals(Assert.java:296)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_verifyHouseCountReportForSpecificDateRange(FrontdeskTest.java:528)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fn_verifyHouseCountReportForSpecificDateRange -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@4973813a]" name="closeApp" is-config="true" duration-ms="562" started-at="2018-10-29T17:21:18Z" finished-at="2018-10-29T17:21:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method status="PASS" signature="LaunchApp()[pri:0, instance:com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@4973813a]" name="LaunchApp" is-config="true" duration-ms="11310" started-at="2018-10-29T17:21:19Z" finished-at="2018-10-29T17:21:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApp -->
+        <test-method status="FAIL" signature="fn_CreateGroupReservOnWeb()[pri:0, instance:com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@4973813a]" name="fn_CreateGroupReservOnWeb" duration-ms="150885" started-at="2018-10-29T17:21:30Z" description="Create a group reservation on web console.Verify posted rates and taxes on frontdesk." finished-at="2018-10-29T17:24:01Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.hotelogix.smoke.genericandbase.GenericMethods.fn_hold(GenericMethods.java:873)
+	at com.hotelogix.smoke.genericandbase.GenericMethods.clickElement(GenericMethods.java:464)
+	at com.hotelogix.smoke.frontdesk.FrontdeskHome.FrontdeskLandingPage.fn_clkAdminLnk(FrontdeskLandingPage.java:688)
+	at com.hotelogix.smoke.frontdesk.WebReservation.WebConfirmReservationPage.ConfirmBooking(WebConfirmReservationPage.java:170)
+	at com.hotelogix.smoke.FrontdeskTest.FrontdeskTest.fn_CreateGroupReservOnWeb(FrontdeskTest.java:908)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fn_CreateGroupReservOnWeb -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@4973813a]" name="closeApp" is-config="true" duration-ms="572" started-at="2018-10-29T17:24:01Z" finished-at="2018-10-29T17:24:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method status="PASS" signature="LaunchApp()[pri:0, instance:com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@4973813a]" name="LaunchApp" is-config="true" duration-ms="10581" started-at="2018-10-29T17:24:02Z" finished-at="2018-10-29T17:24:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApp -->
+        <test-method status="PASS" signature="fn_verifyRtClkCheckoutInSingleReserv()[pri:0, instance:com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@4973813a]" name="fn_verifyRtClkCheckoutInSingleReserv" duration-ms="361126" started-at="2018-10-29T17:24:12Z" description="Create 1N1R reservation,right click on it and verify &#039;Checkout&#039; link." finished-at="2018-10-29T17:30:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fn_verifyRtClkCheckoutInSingleReserv -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@4973813a]" name="closeApp" is-config="true" duration-ms="924" started-at="2018-10-29T17:30:13Z" finished-at="2018-10-29T17:30:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method status="PASS" signature="LaunchApp()[pri:0, instance:com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@4973813a]" name="LaunchApp" is-config="true" duration-ms="10717" started-at="2018-10-29T17:30:14Z" finished-at="2018-10-29T17:30:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApp -->
+        <test-method status="PASS" signature="fn_verifyEnableEditingCheckoutInSingleReserv()[pri:0, instance:com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@4973813a]" name="fn_verifyEnableEditingCheckoutInSingleReserv" duration-ms="264905" started-at="2018-10-29T17:30:25Z" description="Create 1N1R reservation,navigate to Enable Editing page and verify &#039;Checkout&#039; button." finished-at="2018-10-29T17:34:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fn_verifyEnableEditingCheckoutInSingleReserv -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.hotelogix.smoke.FrontdeskTest.FrontdeskTest@4973813a]" name="closeApp" is-config="true" duration-ms="469" started-at="2018-10-29T17:34:50Z" finished-at="2018-10-29T17:34:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.hotelogix.smoke.FrontdeskTest.FrontdeskTest -->
+    </test> <!-- Test(failed)(failed) -->
+  </suite> <!-- Failed suite [Failed suite [Suite]] -->
+</testng-results>

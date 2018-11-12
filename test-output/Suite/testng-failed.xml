@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="3" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.hotelogix.smoke.FrontdeskTest.Ireporter"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.hotelogix.smoke.FrontdeskTest.FrontdeskTest">
+        <methods>
+          <include name="closeApp"/>
+          <include name="TC_189_190"/>
+          <include name="TC_191"/>
+          <include name="fn_verifyHouseCountReportForSpecificDateRange"/>
+          <include name="fn_verifyEnableEditingCheckoutInSingleReserv"/>
+          <include name="TC_194_195_196_197_198_199_200_201"/>
+          <include name="fn_CreateGroupReservOnWeb"/>
+          <include name="fn_verifyEnableEditingLateCheckoutInSingleReserv"/>
+          <include name="fn_verifyMonthlySummaryReportForSpecificMonth"/>
+          <include name="LaunchApp"/>
+          <include name="TC_180_181_182_183_184_185_186_187_188"/>
+          <include name="fn_verifyPrintAndExportBtnInCashierReport"/>
+          <include name="fn_verifyEnableEditingCheckinBtnInSingleReserv"/>
+          <include name="fn_verifyPrintAndExportBtnInDailySalesReport"/>
+          <include name="fn_verifyRgtClickGroupCheckoutLink"/>
+          <include name="fn_verifyRtClkCheckoutInSingleReserv"/>
+          <include name="fn_verifyAutoNAPostingsInAccounts"/>
+        </methods>
+      </class> <!-- com.hotelogix.smoke.FrontdeskTest.FrontdeskTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

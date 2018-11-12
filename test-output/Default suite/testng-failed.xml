@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.hotelogix.smoke.FrontdeskTest.FrontdeskTest">
+        <methods>
+          <include name="TC_189_190"/>
+          <include name="fn_verifyExpressCheckoutInSingleReserv"/>
+          <include name="fn_verifyGuestCheckinBtnForSingleGuestInGrpReserv"/>
+          <include name="fn_verifyHouseCountReportForSpecificDateRange"/>
+          <include name="fn_verifyCheckinBtnInSingleReserv"/>
+          <include name="fn_verifyCalcOfHouseCountReport"/>
+          <include name="fn_verifySingleLnkAndGuestCheckinLnk"/>
+          <include name="fn_CreateGroupReservOnWeb"/>
+          <include name="fn_verifyEnableEditingLateCheckoutInSingleReserv"/>
+          <include name="TC_180_181_182_183_184_185_186_187_188"/>
+          <include name="fn_verifyExportOfDiscountReport"/>
+          <include name="fn_verifyGuestCheckoutInSingleReserv"/>
+          <include name="fn_verifyChkoutForSingleGuestInGrpReserv"/>
+          <include name="TC_191"/>
+          <include name="fn_verifyCashierReport"/>
+          <include name="fn_verifyGrpChkoutBtnOnEnableEditing"/>
+          <include name="fn_verifyCheckoutSelectedInGrpReserv"/>
+          <include name="fn_verifyEnableEditingCheckoutInSingleReserv"/>
+          <include name="fn_verifyGroupCheckinBtnInGrpReserv"/>
+          <include name="fn_verifyEarlyCheckinBtnForSingleGuestInGrpReserv"/>
+          <include name="fn_verifyExportOfDailySalesReport"/>
+          <include name="fn_verifyGuestCheckInLnkForSingleReserv"/>
+          <include name="fn_verifyCheckinBtnForSingleGuestInGrpReserv"/>
+          <include name="fn_verifyExportOfMonthlySummaryReport"/>
+          <include name="fn_verifyGroupCheckinBtnIn1N1RGroupReserv"/>
+          <include name="fn_verifySingleLinkAndCheckinBtn"/>
+          <include name="TC_194_195_196_197_198_199_200_201"/>
+          <include name="fn_verifySingleLinkAndEarlyCheckinBtn"/>
+          <include name="fn_verifyMonthlySummaryReportForSpecificMonth"/>
+          <include name="fn_verifyLateChkoutForSingleGuestInGrpReserv"/>
+          <include name="fn_verifyGroupChkoutInGrpReserv"/>
+          <include name="fn_verifySingleLnkAndEarlyGuestCheckinLnk"/>
+          <include name="fn_verifyNoShowReportForSpecificDateRange"/>
+          <include name="fn_verifyRgtClickGroupCheckoutLink"/>
+          <include name="fn_verifyExpressChkoutInGrpReserv"/>
+          <include name="fn_verifyGuestEarlyCheckinBtnForSingleGuestInGrpReserv"/>
+          <include name="fn_verifyRtClkCheckoutInSingleReserv"/>
+          <include name="fn_verifyPriceAndDiscAmtOnMoreDetailPage"/>
+          <include name="fn_verifyAutoNAPostingsInAccounts"/>
+          <include name="fn_verifyCheckinSelectedInGrpReserv"/>
+          <include name="fn_verifyEarlyCheckinBtnInReserv"/>
+          <include name="fn_verifyGuestEarlyCheckinLnkInSingleReserv"/>
+        </methods>
+      </class> <!-- com.hotelogix.smoke.FrontdeskTest.FrontdeskTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
